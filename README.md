@@ -54,9 +54,6 @@ npm run dev
  ┃ ┣ 📂 commands
  ┃ ┃ ┗ 📂 category
  ┃ ┃   ┗ 📜 command.ts
- ┃ ┃
- ┃ ┃
- ┃ ┃
  ┃ ┣ 📂 database
  ┃ ┃ ┣ 📂 models
  ┃ ┃ ┗ 📜 dbConnection
