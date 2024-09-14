@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
-    "registerCommands": "ts-node src/registerCommands.ts"
+    "dev": "nodemon",
+    "registerCommands": "bun run src/registerCommands.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,11 +13,13 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "mongoose": "^8.5.2",
+    "node-html-to-image": "^5.0.0",
     "nodemon": "^3.1.4"
   },
   "devDependencies": {
     "discord.js": "^14.15.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "@types/bun": "latest"
   }
 }

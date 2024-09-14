@@ -4,35 +4,15 @@ const Schema = mongoose.Schema;
 
 export interface GuildType extends mongoose.Document {
     _id: mongoose.Types.ObjectId;
-    guildId: string;
-    autoRole: {
-        isActive: boolean;
-        roles: string[];
-    };
+    guild_id: string;
 }
 
 const guildSchema = new Schema<GuildType>(
     {
-        guildId: {
+        guild_id: {
             type: String,
             required: true,
-        },
-        autoRole: {
-            type: {
-                isActive: {
-                    type: Boolean,
-                    default: false,
-                },
-                roles: {
-                    type: [String],
-                    default: [],
-                },
-            },
-            default: {
-                active: false,
-                roles: [],
-            },
-        },
+        }
     },
     { timestamps: true }
 );
