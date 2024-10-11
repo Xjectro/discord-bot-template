@@ -2,7 +2,6 @@ import "dotenv/config";
 import { Client, Collection, GatewayIntentBits } from "discord.js";
 import eventHandler from "./handlers/eventHandler";
 import commandHandler from "./handlers/commandHandler";
-import { config } from "./constants";
 import { DiscordClient } from "./types/discord";
 import { connect as dbConnection } from "./database/dbConnection";
 
@@ -16,4 +15,4 @@ dbConnection();
 eventHandler(client);
 commandHandler(client);
 
-client.login(config.token);
+client.login(process.env.TOKEN);

@@ -1,3 +1,5 @@
+[Jectro Discord](https://discord.gg/zYP8zsuQHM)
+
 # 🚀 Discord Bot Template
 
 This project is a template for a Discord bot built using discord.js, TypeScript, and mongoose for MongoDB integration. It includes dynamic event handling and command processing.
@@ -49,7 +51,7 @@ npm run dev
 ## 📂 Project Structure
 
 ```bash
-📦 typescript-discord-bot-template
+📦 discord-bot-template
  ┣ 📂 src
  ┃ ┣ 📂 commands
  ┃ ┃ ┗ 📂 category

@@ -16,7 +16,7 @@ export const data = {
         await interaction.deferReply({ ephemeral: true });
 
         const html = await readFile(
-            path.join(__dirname, "..", "..", "..", "templates", "html", "test.html"),
+            path.join(__dirname, "../../../presentation/html/test.html"),
             "utf-8"
         );
 

@@ -1,6 +1,5 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { termcolors } from "../constants";
 import { Client } from "discord.js";
 
 export default async function commandHandler(client: Client): Promise<void> {
@@ -29,16 +28,12 @@ export default async function commandHandler(client: Client): Promise<void> {
                                     client.commands.set(data.name, data);
                                 } else {
                                     console.warn(
-                                        termcolors.fgRed +
-                                        `Command file ${file} does not export a valid command.` +
-                                        termcolors.reset
+                                        `Command file ${file} does not export a valid command.`
                                     );
                                 }
                             } catch (err) {
                                 console.error(
-                                    termcolors.fgRed +
                                     `Error loading command ${file} from category ${category}:` +
-                                    termcolors.reset,
                                     err
                                 );
                             }
@@ -46,18 +41,12 @@ export default async function commandHandler(client: Client): Promise<void> {
                     );
                 } catch (err) {
                     console.error(
-                        termcolors.fgRed +
-                        `Error reading commands from category ${category}:` +
-                        termcolors.reset,
-                        err
+                        `Error reading commands from category ${category}:` + err
                     );
                 }
             })
         );
     } catch (err) {
-        console.error(
-            termcolors.fgRed + "Error reading commands directory:" + termcolors.reset,
-            err
-        );
+        console.error("Error reading commands directory:" + err);
     }
 }
