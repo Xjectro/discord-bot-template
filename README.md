@@ -59,8 +59,6 @@ npm run dev
  ┃ ┣ 📂 database
  ┃ ┃ ┣ 📂 models
  ┃ ┃ ┗ 📜 dbConnection
- ┃ ┣ 📂 constants
- ┃ ┃ ┗ 📜 /**
  ┃ ┣ 📂 utils
  ┃ ┗ 📜 index.ts
  ┣ 📜 .env.example
